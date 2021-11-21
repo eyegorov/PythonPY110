@@ -1,0 +1,22 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  learner_created: false
+- name: main.py
+  visible: true
+  text: |
+    if __name__ == "__main__":
+        # Write your solution here
+        pass
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sat, 20 Nov 2021 08:57:21 UTC
+  actual: |
+    [('Vladimir', 'id 124672'), ('Victor', 'id 121289'), ('Andrey', 'id 145930'), ('Evgenii', 'id 1424560')]
+record: -1

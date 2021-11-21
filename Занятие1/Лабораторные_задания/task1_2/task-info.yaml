@@ -1,0 +1,47 @@
+type: output
+files:
+- name: tests/output.txt
+  visible: false
+  text: |
+    9
+  learner_created: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 149
+    length: 66
+    placeholder_text: '...  # TODO найти длину самого длинного слова'
+    initial_state:
+      length: 45
+      offset: 149
+    initialized_from_dependency: false
+    selected: true
+    status: Failed
+    encrypted_possible_answer: max(map(len, list_words))
+  text: |
+    def task() -> int:
+        list_words = [
+            "Goldenrod",
+            "Purple",
+            "Salmon",
+            "Turquoise",
+            "Cyan"
+        ]
+
+        return ...  # TODO найти длину самого длинного слова
+
+
+    if __name__ == "__main__":
+        print(task())
+  learner_created: false
+- name: __init__.py
+  visible: false
+  learner_created: false
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sat, 13 Nov 2021 12:45:07 UTC
+  expected: |
+    9
+  actual: <no output>
+record: -1
