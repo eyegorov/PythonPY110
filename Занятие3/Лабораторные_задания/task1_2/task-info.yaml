@@ -31,14 +31,14 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 45
-    length: 35
+  - offset: 56
+    length: 140
     placeholder_text: '...  # TODO записать лесенку в файл'
     initial_state:
       length: 35
       offset: 45
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
     encrypted_possible_answer: |-
       with open(OUTPUT_FILE, "w") as f:

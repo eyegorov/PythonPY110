@@ -30,15 +30,15 @@ files:
 - name: main.py
   visible: true
   placeholders:
-  - offset: 70
-    length: 57
+  - offset: 66
+    length: 2
     placeholder_text: '...  # TODO перезаписать содержимое одного файла в другой'
     initial_state:
       length: 57
       offset: 70
     initialized_from_dependency: false
-    selected: false
-    status: Unchecked
+    selected: true
+    status: Failed
     encrypted_possible_answer: |-
       with open(INPUT_FILE, "r") as input_file:
               with open(OUTPUT_FILE, "w") as output_file:
@@ -63,5 +63,25 @@ files:
 - name: __init__.py
   visible: false
   learner_created: false
-status: Unchecked
+status: Failed
+feedback:
+  message: Incorrect
+  time: Sat, 04 Dec 2021 07:40:13 UTC
+  expected: |
+    GOLDENROD
+    PURPLE
+    SALMON
+    TURQUOISE
+    CYAN
+  actual: |
+    GOLDENROD
+    PURPLE
+    SALMON
+    TURQUOISE
+    CYAN
+    GOLDENROD
+    PURPLE
+    SALMON
+    TURQUOISE
+    CYAN
 record: -1
